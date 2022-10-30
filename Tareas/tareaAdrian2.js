@@ -19,13 +19,11 @@ main();
 
 function ejercicio1(array) {
     let mayor = array[0];
-
     for (var i = 0; i < array.length; i++) {
         if (array[i] > mayor) {
             mayor = array[i];
         }
     }
-
     return mayor;
 }
 
@@ -43,7 +41,6 @@ function ejercicio2(palabra) {
             return palabra + " - No es palindromo";
         }
     } 
-
     return palabra + " - Es palindromo";
 }
 
@@ -66,7 +63,6 @@ function ejercicio3(matriz) {
             }
         }
     }
-
     return contador;
 }
 
@@ -81,7 +77,6 @@ function revisarRepetidos(revisados, numero) {
             return true;
         }
     }
-
     return false;
 }
 
@@ -90,13 +85,11 @@ function ejercicio4(array) {
     let arrayRevisados = [];
     for(var i = 0; i < array.length; i++) {
         const esRepetido = revisarRepetidos(arrayRevisados, array[i]);
-
         if (esRepetido) {
             arrayResultado.push(array[i]);
         }
         arrayRevisados.push(array[i]);
     }
-
     if (arrayResultado.length > 0) {
         return arrayResultado;
     } else {
@@ -113,7 +106,6 @@ const matriz2 = [[2,5,2],[2,2,2,3,3],[2,2,2],[2,2,2,1]];
 
 function obtenerMaxFilas(mat1, mat2) {
     let cantFilas = 0;
-
     const obtenerMaxFila = (mat) => {
         for (var i = 0; i < mat.length; i++) {
             if (cantFilas < mat[i].length) {
@@ -131,7 +123,6 @@ function obtenerMaxColumna(mat1, mat2) {
     if (mat1.length >= mat2.length) {
         return mat1.length;
     }
-
     return mat2.length;
 }
 
@@ -162,7 +153,6 @@ function sumaMatrices(mat1, mat2) {
             matResultado[i][j] = suma1 + suma2;
         }
     }
-
     return matResultado;
 }
 

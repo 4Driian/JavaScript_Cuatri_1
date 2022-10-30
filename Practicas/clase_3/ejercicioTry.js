@@ -11,7 +11,6 @@ function tryCatch(){
         escribirArchivo(archivo);
         cerrarArchivo(archivo);
     }
-
   console.log('su archivo fue escrito', archivo);
 }
 

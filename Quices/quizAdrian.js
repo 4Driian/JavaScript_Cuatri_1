@@ -10,5 +10,5 @@ let resultado;
 console.log('El mayor es',Math.max(...arr));
 console.log('El menor es',Math.min(...arr));
 
-resultado = Math.max(...arr) + Math.min(...arr) / 3 /*Pregunta para después: ¿se divide por la cantidad de numeros del arreglo, o solo por el mayor y el menor?*/ 
+resultado = Math.max(...arr) + Math.min(...arr) / 3; 
 console.log('El promedio es',resultado);

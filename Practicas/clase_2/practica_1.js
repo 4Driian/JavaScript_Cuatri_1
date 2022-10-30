@@ -1,4 +1,4 @@
-/*String → number*/
+/*String → number*/ 
 let num = parseInt("15");
 console.log("String → number", Number(num + 5));
 

@@ -91,7 +91,6 @@ if (cantidad == 3) {
     console.log('---------------------');//Separador
 }
 
-
 /*Ejercicio 6*/
 let nota1 = parseFloat(process.argv.slice(7))
 let nota2 = parseFloat(process.argv.slice(8))

@@ -1,4 +1,5 @@
 const valores = [1,2,3,4,5];
+const valores2 = [1,2,3,4,5,6]
 
 let i = 0;
 let len = valores.length;
@@ -8,8 +9,6 @@ for (; i < len; i++){
     suma += valores[i];
 }
 console.log(suma);
-
-const valores2 = [1,2,3,4,5,6]
 for(valor of valores2){
   console.log(valor)
 }

@@ -1,6 +1,5 @@
 /* Stephannie Garro - Ignacio Marin - Adrián Zúñiga */
 
-
 /*Ejercicio 1 */
 function iterativa(numero) {
   if (numero < 0) 
@@ -13,7 +12,6 @@ function iterativa(numero) {
 }
 console.log(iterativa(5));
 
-
 /*Ejercicio 2*/
 function recursiva(numero2) {
   let resultado = numero2;
@@ -24,7 +22,6 @@ function recursiva(numero2) {
     return resultado;
   }
   console.log(recursiva(5));
-
 
   /*Ejercicio 3*/
 function recursiva2(numero3){
@@ -40,5 +37,4 @@ function recursiva2(numero3){
   return recursiva2(numero3 - 2)
   }
 }
-
 console.log(recursiva2(1));

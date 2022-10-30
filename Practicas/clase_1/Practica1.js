@@ -28,7 +28,7 @@ console.log("Ejemplo 3", n6 < n5);
 const n7 = 1;
 const n8 = 2;
 console.log("Ejemplo 4", n8 > n7);
-w
+
 /*Desigualdad*/
 const n9 = 10;
 if (n9 != 10) {
@@ -36,7 +36,6 @@ if (n9 != 10) {
 } else {
   console.log("Ejemplo 5", "No es diferente");
 }
-
 const n10 = 49;
 if (n10 != 50) {
   console.log("Ejemplo 6", "Es diferente");

@@ -93,6 +93,7 @@ cantidad a comprar, si la persona compra 3 se le aplicará un descuento de
 10%, si lleva 5 o más un descuento de 20%. Debe imprimir una tabla con el
 nombre del producto, cantidad, subtotal, descuento a aplicar y el precio final a
 pagar.*/
+
 let cantidad = 15;
 let producto = "Rollos de canela";
 let precio = 650;
@@ -125,6 +126,7 @@ menos de 50 en cada examen. Si el estudiante obtuvo menos de 70 y mayor
 a 59 en el curso debe de ir a ampliación. Si el estudiante obtuvo más de 70
 en el curso, pero uno de los exámenes tuvo nota menor a 50 debe ir a
 ampliación. Si el estudiante obtuvo nota menor a 60 reprueba el curso.*/
+
 let nota1 = 80;
 let nota2 = 90;
 let nota3 = 50;

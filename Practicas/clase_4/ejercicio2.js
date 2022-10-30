@@ -7,7 +7,6 @@ while (i < tamano) {
   let contadorLinea = 1;
   while(contadorLinea <= i){
     linea += '* ';
-
     if(filas.indexOf(i) !== -1){
       contadorLinea += Math.ceil(i/2);
     } else{
