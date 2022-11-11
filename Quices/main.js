@@ -1,10 +1,7 @@
 
-
 //let numeros = [1,2,3,4,4,5,6]
 
 let numeros = process.argv.slice(2)
-=======
-let numeros = [1,2,3,6,9,8]
 let numeroMayor = numeros[0];
 let numeroMenor = numeros[0];
 let numeroPromedio = 0;
@@ -46,12 +43,6 @@ function numMenor() {
     }
   }
 return numeroMenor
-  console.log('El numero mayor es: ', numMayor());
-  console.log('El número menor es: ', numMenor());
-  console.log('El promedio de los números es: ', numPromedio());
-  console.log('------------------------------------');
-  console.log('En los números: ', numeros);
-  console.log('La mediana es ', mediana());
 }
 
 /* Numero Mayor */
@@ -63,16 +54,5 @@ return numeroMenor
     }
   return numeroMayor 
   }
-
-/* Numero Menor */
-  function numMenor() {
-    for (let i = 0; i < numeros.length; i++) {
-      if (numeros[i] < numeroMenor) {
-        numeroMenor = numeros[i];
-      }
-    }
-  return numeroMenor
-  }
 resultados()
-
 
