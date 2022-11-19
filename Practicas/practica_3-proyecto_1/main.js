@@ -1,3 +1,4 @@
+
 /*Adrian Zuñiga Perez */
 
 let arrayTexto = [];
@@ -11,6 +12,7 @@ function main(){
   console.log('Ejercicio 3 - En el texto: "A Edgar Silva le gusta el café", la letra "A", se repite: ', letrasRepetidas('A Edgar Silva le gusta el café','a' ), ' Veces');
   console.log('Ejercicio 4 - ','El numero obtenido es :', numIngresado,'', adivinarNumero());
   console.log('Ejercicio 5 - ',eliminarEspacios());
+
   
 }
 
@@ -34,6 +36,7 @@ Un año es bisiesto si es divisible entre 4 pero no entre 100, excepto si es div
 400. Por ejemplo, 1996 es bisiesto (divisible entre 4), 1900 no lo es (divisible entre 100)
 y 2000 sí lo es (divisible entre 400).
 */
+
 function annoBisiesto(anno) {
   if ((anno % 4 == 0) && ((anno % 100 != 0))){
     console.log('Ejercicio 2 - ' + 'El año: ',anno, ' es bisiesto ');
@@ -51,6 +54,7 @@ usuario cuántas veces aparece en el texto ese carácter. */
 function letrasRepetidas(texto, contarLetra){
   for(var i = 0; i < texto.length; i++) {
     if (texto[i].toLowerCase() === contarLetra) {
+
       arrayTexto.push(i);
     }
   }
