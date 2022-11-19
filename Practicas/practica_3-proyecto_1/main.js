@@ -1,16 +1,16 @@
+/*Adrian Zuñiga Perez */
 
 let arrayTexto = [];
-let solucion = Math.floor(Math.random() * 100) + 1; // numero aleatorio
-let contador = 6; // numero de intentos
-let numeroUsuario = parseInt(process.argv.slice(2));
-
+let numeroSecreto = 60;
+let contador;
+let numIngresado = parseInt(process.argv.slice(2));
 
 function main(){
   console.log('Ejercicio 1 - '+'El número factorial es: ',numRecursiva(5));
   /*Ejercicio 2 - */annoBisiesto(1900);
   console.log('Ejercicio 3 - En el texto: "A Edgar Silva le gusta el café", la letra "A", se repite: ', letrasRepetidas('A Edgar Silva le gusta el café','a' ), ' Veces');
-  console.log('Ejercicio 4 - ', adivinarNumero());
-  console.log('Ejercicio 5 - ');
+  console.log('Ejercicio 4 - ','El numero obtenido es :', numIngresado,'', adivinarNumero());
+  console.log('Ejercicio 5 - ',eliminarEspacios());
   
 }
 
@@ -48,31 +48,45 @@ function annoBisiesto(anno) {
 Escriba un programa que solicite al usuario un texto y un carácter y le indique al
 usuario cuántas veces aparece en el texto ese carácter. */
 
-function letrasRepetidas(texto, contarCaracter){
+function letrasRepetidas(texto, contarLetra){
   for(var i = 0; i < texto.length; i++) {
-    if (texto[i].toLowerCase() === contarCaracter) {
+    if (texto[i].toLowerCase() === contarLetra) {
       arrayTexto.push(i);
     }
   }
 	return arrayTexto.length;
 }
 
+/*
+Ejercicio 4:
+Escriba un programa que le solicite al usuario adivinar un número “secreto” del 1 al
+100. El programa debe continuar preguntando por nuevos números al usuario hasta
+que lo adivine o ingrese un cero para salir. El programa debe indicar, cada vez que el
+usuario falle, si el número ingresado es mayor o menor que el número a adivinar.
+*/
 function adivinarNumero() {
-  while (contador > 1){
-    if (numeroUsuario < solucion) {
-      console.log(`El número secreto es mayor que ${numeroUsuario}`);
-
-    } else if(numeroUsuario > solucion) {
-      console.log(`El número secreto es menor que ${numeroUsuario}`);
-
-    } else {
-      console.log('¡Bravo, has acertado!');
-      break;
-    }
-
-    contador--
- }
- if (contador == 1) console.log('Ohhhhhhhh el número era ' + solucion);
+  while(numIngresado != numeroSecreto && --contador > 0);
+  if (numIngresado == numeroSecreto){
+    return 'Has adivinado!';
+  } else if (numIngresado === 0){
+    return 'has salido del juego';
+  }else if (numIngresado < numeroSecreto){
+    return 'Intenta con un numero Mayor';
+  } else if (numIngresado > numeroSecreto){
+    return 'Intenta con un numero Menor';
+  } 
 }
-  main()
 
+/*
+Ejercicio 5:
+Escriba un programa que solicite un texto y lo imprima en la consola con todos los
+espacios en blanco removidos. Por ejemplo, si el usuario introduce “May the force be
+with you”, el programa debe retornar “Maytheforcebewithyou”.
+*/
+
+function eliminarEspacios(){
+  var texto = 'May the force be with you'.replace(/ /g,"")
+  return texto
+}
+
+  main()
