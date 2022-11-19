@@ -16,10 +16,8 @@ function main(){
   
 }
 
-/*
-Ejercicio 1:
-Escriba un programa que calcule el factorial de un número de manera recursiva.
-*/
+/*Ejercicio 1:
+Escriba un programa que calcule el factorial de un número de manera recursiva.*/
 function numRecursiva(numero2) {
   var resultado = numero2;
   if(numero2 === 0 || numero2 == 1)
@@ -30,12 +28,10 @@ function numRecursiva(numero2) {
   return resultado ;
 }
 
-/*
-Ejercicio 2:
+/*Ejercicio 2:
 Un año es bisiesto si es divisible entre 4 pero no entre 100, excepto si es divisible entre
 400. Por ejemplo, 1996 es bisiesto (divisible entre 4), 1900 no lo es (divisible entre 100)
-y 2000 sí lo es (divisible entre 400).
-*/
+y 2000 sí lo es (divisible entre 400).*/
 
 function annoBisiesto(anno) {
   if ((anno % 4 == 0) && ((anno % 100 != 0))){
@@ -61,13 +57,12 @@ function letrasRepetidas(texto, contarLetra){
 	return arrayTexto.length;
 }
 
-/*
-Ejercicio 4:
+/*Ejercicio 4:
 Escriba un programa que le solicite al usuario adivinar un número “secreto” del 1 al
 100. El programa debe continuar preguntando por nuevos números al usuario hasta
 que lo adivine o ingrese un cero para salir. El programa debe indicar, cada vez que el
-usuario falle, si el número ingresado es mayor o menor que el número a adivinar.
-*/
+usuario falle, si el número ingresado es mayor o menor que el número a adivinar.*/
+
 function adivinarNumero() {
   while(numIngresado != numeroSecreto && --contador > 0);
   if (numIngresado == numeroSecreto){
@@ -81,12 +76,10 @@ function adivinarNumero() {
   } 
 }
 
-/*
-Ejercicio 5:
+/*Ejercicio 5:
 Escriba un programa que solicite un texto y lo imprima en la consola con todos los
 espacios en blanco removidos. Por ejemplo, si el usuario introduce “May the force be
-with you”, el programa debe retornar “Maytheforcebewithyou”.
-*/
+with you”, el programa debe retornar “Maytheforcebewithyou”. */
 
 function eliminarEspacios(){
   var texto = 'May the force be with you'.replace(/ /g,"")
