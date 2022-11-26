@@ -1,7 +1,16 @@
 //Adrián Zúñiga Pérez
 let numero = parseInt(process.argv.slice(2));
 let NumeroPrimo = true;
-
+let filaUno = [];
+let filaDos = [];
+let filaTres = [];
+let filaCuatro = [];
+let filaCinco = [];
+let filaSeis = [];
+let filaSiete = [];
+let filaOcho = [];
+let filaNueve = [];
+let filaDiez = [];
 /*
 Ejercicio 1:
 Escriba un programa que solicite un número al usuario e imprima en la consola si el
@@ -24,6 +33,14 @@ function numerosPrimos() {
   }
 }
 numerosPrimos();
+
+
+/*
+Ejercicio 2:
+Escriba un programa que permita encontrar las soluciones de una ecuación
+cuadrática:
+*/
+
 
 /*
 Ejercicio 3:
@@ -58,49 +75,37 @@ un espacio. La primera línea tendrá los números del 1 al 10, la segunda del 1
 la tercera
 del 21 al 30 y así hasta llegar a 100.
 */
-
-function hastaCienSecciones() {
-  console.log("Ejercicio 5: ");
-  for (let i = 0; i <= 10; i++) {
-    console.log("");
-    console.log(i);
-    if (i == 10) {
-      for (let i = 11; i <= 20; i++) {
-        console.log("");
-        console.log(i);
-        if (i == 20) {
-          for (let i = 21; i <= 30; i++) {
-            console.log("");
-            console.log(i);
-            if (i == 30) {
-              for (let i = 31; i <= 40; i++) {
-                console.log("");
-                console.log(i);
-                if (i == 40) {
-                  for (let i = 41; i <= 50; i++) {
-                    console.log("");
-                    console.log(i);
-                    if (i == 50) {
-                      for (let i = 51; i <= 60; i++) {
-                        console.log("");
-                        console.log(i);
-                        if (i == 60) {
-                          for (let i = 61; i <= 70; i++) {
-                            console.log("");
-                            console.log(i);
-                            if (i == 70) {
-                              for (let i = 71; i <= 80; i++) {
-                                console.log("");
-                                console.log(i);
-                                if (i == 80) {
-                                  for (let i = 81; i <= 90; i++) {
-                                    console.log("");
-                                    console.log(i);
-                                    if (i == 90) {
-                                      for (let i = 91; i <= 100; i++) {
-                                        console.log("");
-                                        console.log(i);
-                                      }
+console.log("");
+console.log("Ejercicio 5: ");
+for (let i = 0; i <= 10; i++) {
+  filaUno.push(i);
+  if (i == 10) {
+    for (let i = 11; i <= 20; i++) {
+      filaDos.push(i);
+      if (i == 20) {
+        for (let i = 21; i <= 30; i++) {
+          filaTres.push(i);
+          if (i == 30) {
+            for (let i = 31; i <= 40; i++) {
+              filaCuatro.push(i);
+              if (i == 40) {
+                for (let i = 41; i <= 50; i++) {
+                  filaCinco.push(i);
+                  if (i == 50) {
+                    for (let i = 51; i <= 60; i++) {
+                      filaSeis.push(i);
+                      if (i == 60) {
+                        for (let i = 61; i <= 70; i++) {
+                          filaSiete.push(i);
+                          if (i == 70) {
+                            for (let i = 71; i <= 80; i++) {
+                              filaOcho.push(i);
+                              if (i == 80) {
+                                for (let i = 81; i <= 90; i++) {
+                                  filaNueve.push(i);
+                                  if (i == 90) {
+                                    for (let i = 91; i <= 100; i++) {
+                                      filaDiez.push(i);
                                     }
                                   }
                                 }
@@ -120,5 +125,13 @@ function hastaCienSecciones() {
     }
   }
 }
-
-hastaCienSecciones();
+console.log(filaUno);
+console.log(filaDos);
+console.log(filaTres);
+console.log(filaCuatro);
+console.log(filaCinco);
+console.log(filaSeis);
+console.log(filaSiete);
+console.log(filaOcho);
+console.log(filaNueve);
+console.log(filaDiez);
