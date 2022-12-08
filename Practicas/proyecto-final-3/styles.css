@@ -1,0 +1,20 @@
+
+#clear-text{
+  margin-bottom: 10px;
+}
+
+body {
+  display: flex;
+}
+
+.wrapper {
+  width: 200px;
+}
+
+textarea {
+  margin: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
