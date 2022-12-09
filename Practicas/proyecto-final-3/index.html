@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Proyecto Final 3</title>
-</head>
-<body>
-  <div class="wrapper">
-    <label>Numero1</label>
-    <textarea class= "numero1" placeholder="Ingrese un número"></textarea>
-    <label>Numero 2</label>
-    <textarea class="numero2" placeholder="Ingrese un número"></textarea>
-    <button id = "suma" type = "button"> Multiplicar </button>
-    <button id= "dividir" type = "button"> Dividir</button>
-    <label>Resultado</label>
-    <textarea class="resultados" placeholder="Aquí sale el resultado"></textarea>
-  </div>  
-  <script>
-    const suma = document.getElementById("suma");
-    const division = document.querySelector("#dividir");
-    const numero1 = document.querySelector(".numero1");
-    const numero2 = document.querySelector(".numero2");
-    const resultados = document.querySelector(".resultados");
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Proyecto Final 3</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <label>Numero1</label>
+      <textarea class="numero1" placeholder="Ingrese un número"></textarea>
+      <label>Numero 2</label>
+      <textarea class="numero2" placeholder="Ingrese un número"></textarea>
+      <button id="suma" type="button">Multiplicar</button>
+      <button id="dividir" type="button">Dividir</button>
+      <label>Resultado</label>
+      <textarea class="resultados" placeholder="Aquí sale el resultado"></textarea>
+    </div>
+    <script>
+      const suma = document.getElementById("suma");
+      const division = document.querySelector("#dividir");
+      const numero1 = document.querySelector(".numero1");
+      const numero2 = document.querySelector(".numero2");
+      const resultados = document.querySelector(".resultados");
 
-    suma.addEventListener("click", () => {
-      const num1 = numero1.value;
-      const num2 = numero2.value;
-      resultados.textContent = Number(num1) * Number(num2);
-    });
+      suma.addEventListener("click", () => {
+        const num1 = numero1.value;
+        const num2 = numero2.value;
+        resultados.textContent = Number(num1) * Number(num2);
+      });
 
-    division.addEventListener("click", () => {
-      const num1 = numero1.value;
-      const num2 = numero2.value;
-      resultados.textContent = Number(num1) / Number(num2);
-    });
-  </script>
-</body>
+      division.addEventListener("click", () => {
+        const num1 = numero1.value;
+        const num2 = numero2.value;
+        resultados.textContent = Number(num1) / Number(num2);
+      });
+    </script>
+  </body>
 </html>
