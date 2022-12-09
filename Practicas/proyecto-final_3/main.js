@@ -1,11 +1,10 @@
 //Adrián Zúñiga Pérez - ejecutar el programa - node main.js 6
 
-let arr1 = [3,2,4].sort((a, b) => a - b);
-let arr2 = [2,5,4].sort((a, b) => a - b);
+let arr1 = [1,2,3].sort((a, b) => a - b);
+let arr2 = [1,2,4].sort((a, b) => a - b);
 let n = arr1.length;
 let cantidadDeEspacios = parseInt(process.argv.slice(2))
 let arrays = []
-
 
 function arrayDistintos() {
   for (let i = 0; i < n; i++) {
