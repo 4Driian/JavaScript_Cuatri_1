@@ -1,6 +1,11 @@
+//Adrián Zúñiga Pérez - ejecutar el programa - node main.js 6
+
 let arr1 = [3,2,4].sort((a, b) => a - b);
 let arr2 = [2,5,4].sort((a, b) => a - b);
 let n = arr1.length;
+let cantidadDeEspacios = parseInt(process.argv.slice(2))
+let arrays = []
+
 
 function arrayDistintos() {
   for (let i = 0; i < n; i++) {
@@ -15,20 +20,17 @@ function arrayDistintos() {
 }
 arrayDistintos();
 
-
-function matrizX(matriz) {
-  let matrices = [];
-  for (let i= 0; i < matriz; i++) {
-    let fila = []
-    for (let j = 0; j < matriz; j++) {
-      if (i == j) {
-        fila.push('*');
-      }else {
-        fila.push('')
-      }
+for (let i = 0; i < cantidadDeEspacios; i++) {
+  let equis = []
+  for (let j = 0; j < cantidadDeEspacios; j++) {
+    if (i === j) {
+      equis.push("*")
+    } else if (j + 1 === cantidadDeEspacios - i) {//revisar
+      equis.push("*")
+    } else {
+      equis.push(0)
     }
-    matrices.push(fila)
+  }
+  arrays.push(equis)
 }
-return matrices;
-}
-console.log(matrizX(6))
+console.log('Matriz en Equis ', arrays)
